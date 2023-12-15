@@ -1,0 +1,88 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Nunito','Serif',sans-serif !important;
+}
+body{
+  width: 100%;
+  height: 105vh;
+  padding: 0%;
+  margin: 0%;
+   background-image: url('public/tecnologia-4.0.jpg'); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+  /* background-image: url('https://thumbs.dreamstime.com/b/nuevo-concepto-de-la-tecnolog%C3%ADa-internet-del-negocio-entrenamiento-webinar-conocimiento-las-habilidades-121274023.jpg?w=1600'); */
+ /*  background-image: url('https://img.freepik.com/fotos-premium/inteligencia-artificial-aprendizaje-profundo-maquinas-mineria-datos-otra-interfaz-usuario-moderna-tecnologias-innovadoras-futuristas-ia-generativa_76964-17821.jpg'); */
+
+ 
+
+}
+
+#root{
+  width: 100%;
+  height:100% !important;
+  padding: 0%;
+  margin: 0%;
+   background: rgb(0,0,0,0.2);
+ 
+
+}
+h4{
+  margin:10px 0px 0px 30px !important;
+}
+.check,#check{
+  display: none;
+}
+nav{
+  width:100%;
+  padding:5px;
+ 
+  background:rgb(0,100,0, 0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+@media (max-width:1052px) {
+  nav{
+    top: 80px !important;
+    left: -100% !important;
+    width:100% !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    position: fixed;
+    transition: all 1.2s;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.9) !important;
+  }
+  .check{
+    display: flex;
+    color:rgb(252, 60, 12);
+    z-index: 4;
+    position: fixed;
+    cursor: pointer;
+    font-size: 30px;
+    left: 10px;
+    width: 30px;
+    
+    transform:rotate3d(1,1,1,360deg);
+    &:hover{
+      color: rgba(220, 117, 20, 0.829) !important;
+    }
+  }
+ 
+  #check{
+    display: flex;
+    visibility: hidden;
+  
+  }
+  /*   #check:checked~.check{
+    position: relative;
+    transition: all 1.2s;
+    transform:scale(1.2);
+  }  */
+}
