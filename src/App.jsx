@@ -44,7 +44,7 @@ function App() {
       {spinner ? <div style={{color:'orangered'}} className='w-100 p-4 d-flex justify-content-center fs-3'><Spinner className='m-5 t-5' variant="info" />Iniciando sesion...<Spinner className='m-5 t-5' variant="info" />  </div> : null}
       <Routes>
 
-        <Route path='/login' element={!user ? <><Login /></> : null} />
+        <Route path='/react-abm-1/' element={!user ? <><Login /></> : null} />
         <Route element={<ProtectedRoutes canActivate={user} />}>
           <Route path='/' element={<PageInicio/>} />
           <Route path='/productos' element={<h1 style={{color:'white',width:'auto'}}>Productos</h1>} />
