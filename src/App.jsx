@@ -51,7 +51,7 @@ function App() {
           <Route path='/contacto' element={<h1 style={{color:'white',width:'auto'}}>Contacto</h1>} />
         </Route>
 
-        <Route path='*' element={<Page404/>} />
+        {/* <Route path='*' element={<Page404/>} /> */}
 
       </Routes>
       {user && !spinner ? <><Footer/> </> : null}
