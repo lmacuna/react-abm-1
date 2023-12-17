@@ -31,7 +31,7 @@ const Register = ({setRegistrarse}) => {
          console.log(data)
          const envio=async()=>{
             var metodo='POST'
-            var url=`http://localhost:4000/register`
+            var url=`https://app-express-1-lmacuna.vercel.app/register`
             var res=await servicesRegister(data,metodo,url)
               
                

@@ -34,7 +34,7 @@ const Login = () => {
              console.log(data)
         const envio=async()=>{
             var metodo='POST'
-            var url=`https://app-express-1-hre87360g-lmacuna.vercel.app/`
+            var url=`https://app-express-1-lmacuna.vercel.app/login`
             var res=await services(data,metodo,url)
               
            
